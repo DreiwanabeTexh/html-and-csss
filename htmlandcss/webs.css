@@ -1,0 +1,244 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and background styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background: #eaf2e7; /* Soft light green background */
+  color: #2b3e2f; /* Dark green text for readability */
+  line-height: 1.5;
+}
+
+/* Header styling */
+.navcontainer {
+  background: #4b7f58; /* Forest green for the header */
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 150px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin-left: 30px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding: 10px 20px;
+  background: #7b9e71; /* Earthy green for buttons */
+  color: #f4f4f4;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+  background: #9fbf8e; /* Lighter green on hover */
+}
+
+.search-bar {
+  margin-left: auto;
+}
+
+.search-bar input {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #7b9e71;
+}
+
+.search-bar button {
+  padding: 5px 10px;
+  background: #7b9e71;
+  color: #f4f4f4;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.search-bar button:hover {
+  background: #9fbf8e;
+}
+
+/* Main content styling */
+.main-content {
+  text-align: center;
+  padding: 50px 20px;
+  animation: fadeIn 1.5s ease-in-out; /* Animate the whole container */
+}
+
+.mainpicture {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #6f8c66; /* Olive green border */
+  margin-bottom: 20px;
+  animation: slideIn 1.5s ease-in-out; /* Slide-in animation for the picture */
+}
+
+.text {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  opacity: 0; /* Initially hidden */
+  animation: fadeUp 1.5s ease-in-out forwards; /* Fade up animation for text */
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Section styling */
+.info-section {
+  opacity: 0; /* Initially hidden */
+  animation: fadeIn 1s ease-out forwards; /* Apply fade-in animation */
+  width: 45%; /* Reduced width for a more compact layout */
+  height: auto; /* Adjust height dynamically based on content */
+  padding: 15px; /* Less padding for a tighter look */
+  margin: 20px;
+  background: #7b9e71;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Add subtle shadow for depth */
+  display: inline-block; /* Allows for side-by-side layout */
+  vertical-align: top; /* Aligns sections properly */
+}
+
+.split-container {
+  display: flex;
+  justify-content: space-between;*/
+  gap: 20px;
+  padding: 20px;
+}
+
+.split-container .info-section {
+  flex: 1;
+  max-width: 48%; 
+}
+
+footer {
+  background: #4b7f58; 
+  color: #f4f4f4;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.footer-container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.footer-logo img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 10px; 
+}
+
+footer p {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.social-button {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #f4f4f4;
+  transition: background 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+}
+
+.social-button:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+.social-button.tiktok {
+  background: #010101; /* Black for TikTok */
+}
+
+.social-button.facebook {
+  background: #3b5998; /* Facebook blue */
+}
+
+.social-button.email {
+  background: #d44638; /* Gmail red */
+}
+
+.social-button.instagram {
+  background: #833ab4; /* Instagram gradient start */
+  background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045);
+}
+
+.social-button.batstate {
+  background: #e01a25; /* BatStateU red */
+}
+
+footer .social-button.github {
+  background-color: #333; /* GitHub dark background */
+}
+
+footer .social-button.github:hover {
+  background-color: #24292f; /* Darker shade on hover */
+}
+
+.social-button:hover {
+  opacity: 0.9;
+}
+
+html {
+  scroll-behavior: smooth;
+}

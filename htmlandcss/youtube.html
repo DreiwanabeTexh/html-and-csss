@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Profile</title>
+  <link rel="stylesheet" href="webs.css">
+</head>
+<body>
+  <header>
+    <div class="navcontainer">
+      <img class="logo" src="https://batstateu.edu.ph/wp-content/uploads/2022/05/BatStateU-NEU-Logo.png" alt="BatStateU Logo">
+      <nav>
+        <ul>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="search-bar">
+        <input type="text" placeholder="Search...">
+        <button>Go</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="main-content">
+      <img class="mainpicture" src="pics/image-removebg-preview.png" alt="Profile Picture">
+      <h1 class="text">Hello, I'm Karl Andrei C. Talagtag</h1>
+      <p class="text">BSU-Alangilan | Aspiring Web Developer</p>
+    </div>
+
+    <div class="split-container">
+      <section class="info-section" id="About">
+        <h2>Personal Information</h2>
+        <p><strong>Name:</strong> Karl Andrei C. Talagtag</p>
+        <p><strong>Course:</strong> Bachelor of Science in Computer Science</p>
+        <p><strong>School:</strong> Batangas State University - Alangilan</p>
+        <p><strong>Interests:</strong> Coding, Weightlifting, and Sleeping</p>
+      </section>
+    
+      <section class="info-section" id="SDG">
+        <h2>SDG 15</h2>
+        <h3>Life on Land</h3>
+        <p>Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="https://batstateu.edu.ph/wp-content/uploads/2022/05/BatStateU-NEU-Logo.png" alt="BatStateU Logo">
+      </div>
+      <p>Connect with me:</p>
+      <div class="social-buttons">
+        <a href="https://www.tiktok.com/en/" target="_blank" title="TikTok" class="social-button tiktok">TikTok</a>
+        <a href="https://www.facebook.com/karlandriecanoy.talagtag/" target="_blank" title="Facebook" class="social-button facebook">Facebook</a>
+        <a href="https://mail.google.com/mail/u/1/#inbox?compose=new" title="Email" class="social-button email">Email</a>
+        <a href="https://www.instagram.com/" target="_blank" title="Instagram" class="social-button instagram">Instagram</a>
+        <a href="https://batstateu.edu.ph/" target="_blank" title="BatStateU" class="social-button batstate">BatStateU</a>
+        <a href="https://github.com/DreiwanabeTexh" target="_blank" title="GitHub" class="social-button github">GitHub</a>
+      </div>
+      <p>&copy; 2024 Karl Andrei C. Talagtag. All Rights Reserved.</p>
+    </div>
+  </footer>
+  
+  <script>
+    // Smooth scroll to About and Contact sections
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        // Scroll to the target section
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
